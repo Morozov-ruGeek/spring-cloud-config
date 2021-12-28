@@ -11,4 +11,4 @@
     routes:
       study-center: /study-center/**
       payment-service: /payment-service/**
-    sensitiveHeaders: Cookie, Set-Cookie
+    sensitiveHeaders: Cookie, Set-Cookie, Authorization
