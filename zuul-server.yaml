@@ -9,6 +9,10 @@
     host:
       socket-timeout-millis: 15000
     routes:
-      study-center: /study-center/**
-      payment-service: /payment-service/**
+      study-center: 
+        path: v1/study-center/**
+        serviceId: ${STUDY_CENTER_NAME}
+      payment-service:
+        path: v1/payment-service/**
+        seriveId: ${PAYMENT_SERVICE_NAME}
     sensitiveHeaders: Cookie, Set-Cookie, Authorization
