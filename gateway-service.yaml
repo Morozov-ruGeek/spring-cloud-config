@@ -11,11 +11,11 @@
                                 - Authorization
                 routes:
                     - id: study-center
-                      uri: http://study-center
+                      uri: lb://study-center
                       predicates: 
                         - Path=/study-center/**
                     - id: payment-service
-                      uri: http://payment-service
+                      uri: lb://payment-service
                       predicates:
                         - Path=/payment-service/**
     eureka:
