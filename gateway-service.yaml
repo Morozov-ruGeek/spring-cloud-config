@@ -12,8 +12,12 @@
                 routes:
                     - id: study-center
                       uri: http://study-center
+                      predicates: 
+                        - Path=/study-center/**
                     - id: payment-service
                       uri: http://payment-service
+                      predicates:
+                        - Path=/payment-service/**
     eureka:
         client:
             registerWithEureka: true
