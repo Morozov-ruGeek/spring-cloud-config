@@ -11,17 +11,9 @@
                                 - Authorization
                 routes:
                     - id: study-center
-                      uri: lb://study-center
-                      predicates:
-                        - Path=/api/**
-                      filters:
-                        - StripPrefix=1
+                      uri: http://study-center
                     - id: payment-service
-                      uri: lb://payment-service
-                      predicates:
-                        - Path=/payment/**
-                      filters:
-                        - StripPrefix=1
+                      uri: http://payment-service
     eureka:
         client:
             registerWithEureka: true
