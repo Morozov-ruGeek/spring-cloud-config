@@ -5,19 +5,19 @@
                     corsConfigurations:
                         '[/**]':
                             allowedOrigins:
-                                - "${GATEWAY_URL}"
+                                - "http://localhost:5555"
                             allowedHeaders:
                                 - Content-Type
                                 - Authorization
                 routes:
-                    - id: ${STUDY_CENTER_NAME}
-                      uri: lb://${STUDY_CENTER_NAME}
+                    - id: study-center
+                      uri: lb://study-center
                       predicates:
                         - Path=/api/**
                       filters:
                         - StripPrefix=1
-                    - id: ${PAYMENT_SERVICE_NAME}
-                      uri: lb://${PAYMENT_SERVICE_NAME}
+                    - id: payment-service
+                      uri: lb://payment-service
                       predicates:
                         - Path=/payment/**
                       filters:
