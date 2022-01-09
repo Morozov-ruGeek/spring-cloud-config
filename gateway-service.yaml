@@ -4,7 +4,7 @@
                 globalcors:
                     corsConfigurations:
                         '[/**]':
-                            allowedOrigins: "http://localhost:5555"
+                            allowedOrigins: "*"
                             allowedMethods: "*"
                             allowedHeaders: "*"
                 routes:
