@@ -6,7 +6,10 @@
                         '[/**]':
                             allowedOrigins:
                                 - "http://localhost:5555"
-                            allowedMethods: "*"
+                            allowedMethods:
+                                - GET
+                                - POST
+                                - PUT
                             allowedHeaders:
                                 - Content-Type
                                 - Authorization
