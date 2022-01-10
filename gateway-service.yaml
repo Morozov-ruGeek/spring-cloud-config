@@ -4,9 +4,12 @@
                 globalcors:
                     corsConfigurations:
                         '[/**]':
-                            allowedOrigins: "http://localhost:5555"
+                            allowedOrigins:
+                                - "http://localhost:5555"
                             allowedMethods: "*"
-                            allowedHeaders: "*"
+                            allowedHeaders:
+                                - Content-Type
+                                - Authorization
                 routes:
                     - id: study-center
                       uri: http://study-center
