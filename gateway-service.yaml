@@ -9,12 +9,12 @@
                             allowedHeaders: "*"
                 routes:
                     - id: study-center
-                      uri: lb://study-center
+                      uri: http://study-center
                       predicates: 
                         - Path=/study-center/**
                         - Header=Authorization, Basic password
                     - id: payment-service
-                      uri: lb://payment-service
+                      uri: http://payment-service
                       predicates:
                         - Path=/payment-service/**
     eureka:
