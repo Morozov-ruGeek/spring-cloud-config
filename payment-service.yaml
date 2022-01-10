@@ -1,8 +1,8 @@
     spring:
         datasource:
             driverClassName: org.postgresql.Driver
-            url: jdbc:postgresql://${POSTGRES_URL}
-            jdbc-url: jdbc:postgresql://${POSTGRES_URL}
+            url: jdbc:postgresql://payment-db:5432/payment-db
+            jdbc-url: jdbc:postgresql://payment-db:5432/payment-db
             username: ${POSTGRES_USER}
             password: ${POSTGRES_PASSWORD}
     eureka:
