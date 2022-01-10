@@ -14,13 +14,13 @@
 #                                 - Content-Type
 #                                 - Authorization
                 routes:
-                    - id: study-center
-                      uri: http://study-center:8190/
+                    - id: study-center:8190
+                      uri: http://study-center
                       predicates: 
                         - Path=/study-center/**
 #                         - Header=Authorization, Basic password
-                    - id: payment-service
-                      uri: http://payment-service:8189/
+                    - id: payment-service:8189
+                      uri: http://payment-service
                       predicates:
                         - Path=/payment-service/**
     eureka:
