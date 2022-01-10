@@ -15,7 +15,7 @@
                       uri: http://study-center
                       predicates: 
                         - Path=/study-center/**
-                        - Header=Authorization, Basic password
+#                         - Header=Authorization, Basic password
                     - id: payment-service
                       uri: http://payment-service
                       predicates:
