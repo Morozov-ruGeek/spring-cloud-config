@@ -15,7 +15,7 @@
 #                                 - Authorization
                 routes:
                     - id: study-center
-                      uri: http://study-center:80
+                      uri: "http://study-center:80"
                       predicates: 
                         - Path=/study-center/**
 #                         - Header=Authorization, Basic password
