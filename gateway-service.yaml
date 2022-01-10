@@ -10,9 +10,9 @@
                                 - GET
                                 - POST
                                 - PUT
-                            allowedHeaders:
-                                - Content-Type
-                                - Authorization
+                            allowedHeaders: "*"
+#                                 - Content-Type
+#                                 - Authorization
                 routes:
                     - id: study-center
                       uri: http://study-center
