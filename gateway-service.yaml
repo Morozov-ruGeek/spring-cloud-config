@@ -19,10 +19,14 @@
                       predicates: 
                         - Path=/study-center/**
 #                         - Header=Authorization, Basic password
+                      filters:
+                        - StripPrefix=1
                     - id: payment-service
                       uri: http://payment-service
                       predicates:
                         - Path=/payment-service/**
+                      filters:
+                        - StripPrefix=1
     eureka:
         client:
             registerWithEureka: true
